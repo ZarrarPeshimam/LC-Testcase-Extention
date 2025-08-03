@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "LC Test Case Generator",
+  "version": "1.0",
+  "permissions": ["tabs", "sidePanel"],
+  "host_permissions": ["https://leetcode.com/*"],
+  "action": {
+    "default_title": "Inject Test Case",
+    "default_icon": "icon.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "side_panel": {
+    "default_path": "sidepanel.html"
+  }
+}
